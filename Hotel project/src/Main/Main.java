@@ -4,8 +4,7 @@ package Main;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-
+import java.util.ArrayList;
 
 import Booking.Booking;
 import Customer.Customer;
@@ -21,7 +20,7 @@ public class Main {
 	static ListRooms list =new ListRooms();
 	static Booking ob=new Booking();
 	
-	public static  String a[]=new String[25];
+	public static ArrayList<String> a=new ArrayList<String>();
 	public static int namecount; 
 	public static void main(String[] args) throws IOException {
 		 
@@ -45,7 +44,7 @@ public class Main {
 			System.out.println();
 		System.out.println("Enter the Name");
 		Firstname=b.readLine();
-		a[namecount++]=Firstname;
+		a.add(Firstname);
 		System.out.println("Enter the LastName");
 		Lastname=b.readLine();
 		 

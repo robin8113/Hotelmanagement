@@ -23,11 +23,11 @@ public void disp() {
 			//if((Booking.c[i]==Registration.id-1)&& (i+1)<25)
 				//Booking.c[i+1]=Registration.id-1;
 			//System.out.println(Registration.c[i]+" "+Booking.date[i]);
-			if(Booking.c[i]<=Registration.id-1&&Booking.date[i]>=n&&Booking.date[i]<=m)
+			if(Booking.c.get(i)<=Registration.id-1&&Booking.date[i]>=n&&Booking.date[i]<=m)
 			{
 						//		Registration.c[i+1]=Registration.c[i];
 
-					System.out.println(Booking.c[i]+"\t \t  "+Booking.roomno[i]);
+					System.out.println(Booking.c.get(i)+"\t \t  "+Booking.roomno.get(i));
 			}
 			
 	  }

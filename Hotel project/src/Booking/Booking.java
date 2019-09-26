@@ -3,6 +3,7 @@ package Booking;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -14,8 +15,8 @@ public class Booking {
 	int count=0;
 	int num;
 	static int i=0,j=5,k=15,l=10,dcount=0,rcount=0,idcount=0,cidcount=0;
-	public static int c[]=new int[25];
-	public static int roomno[]=new int[25];
+	public static ArrayList<Integer> c=new ArrayList<Integer>();
+	public static ArrayList<Integer> roomno=new ArrayList<Integer>();
 	String m,m1,m2,m3,m4;
 	static int a[]=new int[25];
 	public static int cid[]=new int[25];
@@ -174,11 +175,11 @@ public class Booking {
 			{
 				b1[i]=Registration.id-1;
 				i++;
-				c[idcount++]=Registration.id-1;
+				c.add(Registration.id-1);
 				break;
 				
 			}
-			roomno[rcount++]=i;
+			roomno.add(i);
 			System.out.println("Thank you for booking your room is"+i);
 			
 			}
@@ -189,11 +190,11 @@ public class Booking {
 			{
 				b1[j]=Registration.id-1;
 				j++;
-				c[idcount++]=Registration.id-1;
+				c.add(Registration.id-1);
 				break;
 				
 			}	
-			roomno[rcount++]=j;
+			roomno.add(j);
 			System.out.println("Thank you for booking your room is"+j);
 		}
 		}
@@ -206,11 +207,11 @@ public class Booking {
 			{
 				b1[l]=Registration.id-1;
 				l++;
-				c[idcount++]=Registration.id-1;
+				c.add(Registration.id-1);
 				break;
 				
 			}
-			roomno[rcount++]=l;
+				 roomno.add(l);
 			System.out.println("Thank you for booking your room is"+l);
 			 }
 		
@@ -220,11 +221,11 @@ public class Booking {
 			{
 				b1[k]=Registration.id-1;
 				k++;
-				c[idcount++]=Registration.id-1;
+				c.add(Registration.id-1);
 				break;
 				
 			}
-			roomno[rcount++]=k;
+			roomno.add(k);
 			System.out.println("Thank you for booking your room is "+k);
 		}
 		}
